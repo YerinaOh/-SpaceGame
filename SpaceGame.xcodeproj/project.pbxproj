@@ -14,6 +14,11 @@
 		B31104681D783F4100FAFF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31104661D783F4100FAFF93 /* Main.storyboard */; };
 		B311046A1D783F4100FAFF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31104691D783F4100FAFF93 /* Assets.xcassets */; };
 		B311046D1D783F4100FAFF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B311046B1D783F4100FAFF93 /* LaunchScreen.storyboard */; };
+		B31104781D783F8300FAFF93 /* alien@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B31104751D783F8300FAFF93 /* alien@2x.png */; };
+		B31104791D783F8300FAFF93 /* shuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B31104761D783F8300FAFF93 /* shuttle@2x.png */; };
+		B311047A1D783F8300FAFF93 /* torpedo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B31104771D783F8300FAFF93 /* torpedo@2x.png */; };
+		B311047E1D783F9B00FAFF93 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B311047C1D783F9B00FAFF93 /* bgmusic.mp3 */; };
+		B311047F1D783F9B00FAFF93 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B311047D1D783F9B00FAFF93 /* torpedo.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		B31104691D783F4100FAFF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B311046C1D783F4100FAFF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B311046E1D783F4100FAFF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31104751D783F8300FAFF93 /* alien@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alien@2x.png"; sourceTree = "<group>"; };
+		B31104761D783F8300FAFF93 /* shuttle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shuttle@2x.png"; sourceTree = "<group>"; };
+		B31104771D783F8300FAFF93 /* torpedo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "torpedo@2x.png"; sourceTree = "<group>"; };
+		B311047C1D783F9B00FAFF93 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
+		B311047D1D783F9B00FAFF93 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		B311045D1D783F4100FAFF93 /* SpaceGame */ = {
 			isa = PBXGroup;
 			children = (
+				B311047B1D783F9200FAFF93 /* sounds */,
+				B31104741D783F5B00FAFF93 /* sprites.atlas */,
 				B311045E1D783F4100FAFF93 /* AppDelegate.swift */,
 				B31104601D783F4100FAFF93 /* GameScene.sks */,
 				B31104621D783F4100FAFF93 /* GameScene.swift */,
@@ -68,6 +80,25 @@
 				B311046E1D783F4100FAFF93 /* Info.plist */,
 			);
 			path = SpaceGame;
+			sourceTree = "<group>";
+		};
+		B31104741D783F5B00FAFF93 /* sprites.atlas */ = {
+			isa = PBXGroup;
+			children = (
+				B31104751D783F8300FAFF93 /* alien@2x.png */,
+				B31104761D783F8300FAFF93 /* shuttle@2x.png */,
+				B31104771D783F8300FAFF93 /* torpedo@2x.png */,
+			);
+			name = sprites.atlas;
+			sourceTree = "<group>";
+		};
+		B311047B1D783F9200FAFF93 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B311047C1D783F9B00FAFF93 /* bgmusic.mp3 */,
+				B311047D1D783F9B00FAFF93 /* torpedo.mp3 */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +159,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31104791D783F8300FAFF93 /* shuttle@2x.png in Resources */,
+				B31104781D783F8300FAFF93 /* alien@2x.png in Resources */,
 				B31104611D783F4100FAFF93 /* GameScene.sks in Resources */,
+				B311047E1D783F9B00FAFF93 /* bgmusic.mp3 in Resources */,
+				B311047A1D783F8300FAFF93 /* torpedo@2x.png in Resources */,
 				B311046D1D783F4100FAFF93 /* LaunchScreen.storyboard in Resources */,
 				B311046A1D783F4100FAFF93 /* Assets.xcassets in Resources */,
+				B311047F1D783F9B00FAFF93 /* torpedo.mp3 in Resources */,
 				B31104681D783F4100FAFF93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +299,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CJ-E-M.SpaceGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,6 +311,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CJ-E-M.SpaceGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
